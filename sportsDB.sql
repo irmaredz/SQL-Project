@@ -99,7 +99,7 @@ CREATE PROCEDURE update_member_password (IN p_id VARCHAR(255), IN p_password VAR
 BEGIN
 	UPDATE members SET password=p_password WHERE id=p_id;
 END $$
-
+ 
 CREATE PROCEDURE update_member_email (IN p_id VARCHAR(255), IN p_email VARCHAR(255))
 BEGIN
 	UPDATE members SET email = p_email WHERE id= p_id;
